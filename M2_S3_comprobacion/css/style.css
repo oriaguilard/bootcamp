@@ -1,0 +1,24 @@
+/*selectores ALT + SHIFT + A 
+selector de id, clase(muchas cajas a un mismo destino), etiqueta o tag
+id # // clase . //
+*/
+
+
+#tabla {
+    border-collapse:collapse;
+    border-color: black;
+}
+
+.rojo {background-color: red;}
+.blanco {background-color: white;}
+.verde {background-color: green;}
+.gris {background-color: grey;}
+.cafe{background-color: brown }
+.azul{background-color: blue}
+.violeta{background-color: violet}
+.rosado{background-color:pink}
+.amarillo{background-color: yellow;}
+.turquesa{background-color:aqua}
+.naranjo{background-color:orange}
+.purpura{background-color:purple}
+.negro{background-color:black ; color: white;}

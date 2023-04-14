@@ -1,0 +1,190 @@
+mega2@LAPTOP-HO0NACE5 MINGW64 ~
+$ pwd
+/c/Users/mega2
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ IntelGraphicsProfiles/
+ Links/
+'Menú Inicio'@
+ Microsoft/
+ MicrosoftEdgeBackups/
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+'OneDrive - Edutecno Capacitacion'/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ prueba/
+ pseint/
+ python/
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~
+$ ^C
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~
+$ cd Desktop/
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop
+$ ls
+ BOOTCAMP/
+ CARLOS/
+ Captura.PNG
+'Microsoft SQL Server Management Studio 18.lnk'*
+'ORACLE SUBTEL.lnk'*
+ SSMS-Setup-ENU.exe*
+'VPN MANUAL CARTERIZADO.docx'
+ VPN.txt
+'Visual Studio Code.lnk'*
+ anyconnect-win-4.9.05042-core-vpn-predeploy-k9.msi
+ desktop.ini
+ remove.bg.lnk*
+ s12.txt
+ sqldeveloper/
+ sqldeveloper-21.4.1.349.1822-x64.zip
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop
+$ mkdir prueba
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop
+$ ls
+ BOOTCAMP/
+ CARLOS/
+ Captura.PNG
+'Microsoft SQL Server Management Studio 18.lnk'*
+'ORACLE SUBTEL.lnk'*
+ SSMS-Setup-ENU.exe*
+'VPN MANUAL CARTERIZADO.docx'
+ VPN.txt
+'Visual Studio Code.lnk'*
+ anyconnect-win-4.9.05042-core-vpn-predeploy-k9.msi
+ desktop.ini
+ prueba/
+ remove.bg.lnk*
+ s12.txt
+ sqldeveloper/
+ sqldeveloper-21.4.1.349.1822-x64.zip
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop
+$ cd prueba/
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba
+$ pwd
+/c/Users/mega2/Desktop/prueba
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba
+$ touch texto.txt
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba
+$ ls
+texto.txt
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba
+$ git init
+Initialized empty Git repository in C:/Users/mega2/Desktop/prueba/.git/
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        texto.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git add .
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git commit -m "inicializando repositorio"
+[master (root-commit) d9dbccc] inicializando repositorio
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 texto.txt
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git log --oneline
+d9dbccc (HEAD -> master) inicializando repositorio
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   texto.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git diff
+diff --git a/texto.txt b/texto.txt
+index e69de29..37d8675 100644
+--- a/texto.txt
++++ b/texto.txt
+@@ -0,0 +1 @@
++Hola mundo
+\ No newline at end of file
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git add .
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git commit -m "cambios texto.txt"
+[master 846d70f] cambios texto.txt
+ 1 file changed, 1 insertion(+)
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git log --oneline
+846d70f (HEAD -> master) cambios texto.txt
+d9dbccc inicializando repositorio
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git diff
+diff --git a/texto.txt b/texto.txt
+index 37d8675..71ef927 100644
+--- a/texto.txt
++++ b/texto.txt
+@@ -1 +1,2 @@
+-Hola mundo
+\ No newline at end of file
++Hola mundo
++Hola Orianna
+\ No newline at end of file
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git restore texto.txt
+
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ cat texto.txt
+Hola mundo
+mega2@LAPTOP-HO0NACE5 MINGW64 ~/Desktop/prueba (master)
+$ git log --oneline
+846d70f (HEAD -> master) cambios texto.txt
+d9dbccc inicializando repositorio

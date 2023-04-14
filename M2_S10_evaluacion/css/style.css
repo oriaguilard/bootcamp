@@ -1,29 +1,22 @@
-h1{
-font-size: 3rem;
+h1 {
+    font-size: 3rem;
 }
 
-h4{
+h4 {
     text-decoration: overline;
 }
 
-nav{
+footer {
     background-image: url('../img/fondo.jpg');
-    background-position: cover;
-    
+
 }
 
-footer{
-    background-image: url('../img/fondo.jpg');
+.navbar-brand {
+    width: 30%;
 }
-.navbar-brand{ width: 30%}
 
-.formulario1{
-    width: 60%;
-    border-radius: 2%;
-}
-.formulario2{
-    width: 60%;
-    border-radius: 2%;
+nav {
+    background-image: url('../img/fondo.jpg');
 }
 
 /*carrusel*/
@@ -31,5 +24,229 @@ footer{
     width: 100%;
     height: 400px;
     object-fit: cover;
+
+}
+
+/*Pantalla extragrande >1200px*/
+@media (min-width:1200px) {
+
+    #uno {
+
+        width: 30%;
+        display: inline-block;
+        margin-inline-start: 2px;
+        margin-inline-end: 30px;
+    }
+
+    #dos {
+        display: inline-block;
+        width: 30%;
+        margin-inline-start: 2px;
+        margin-inline-end: 30px;
+
+    }
+
+    #tres {
+        display: inline-block;
+        width: 30%;
+        margin-inline-start: 2px;
+        margin-inline-end: 30px;
+
+    }
+
+    #formulario1 {
+        width: 30%;
+        border-radius: 2%;
+        display: block;
+    }
+
+    #formulario2 {
+        width: 30%;
+        border-radius: 2%;
+        display: block;
+
+    }
+
+    nav {
+        background-image: url('../img/fondo.jpg');
+        background-size:contain;
+    }
+
+    footer {
+        background-image: url('../img/fondo.jpg');
+        background-size:cover;
+        height: 150px;
+    
+    
+    }
+
+}
+
+/*Pantalla grande >992px*/
+@media (min-width:992px) and (max-width:1199px) {
+
+    #uno {
+
+        width: 40%;
+        display: inline-block;
+        margin-inline-start: 50px;
+        margin-inline-end: 2px;
+    }
+
+    #dos {
+        display: inline-block;
+        width: 40%;
+        margin-inline-start: 50px;
+        margin-inline-end: 2px;
+
+
+    }
+
+    #tres {
+        display: block;
+        width: 70%;
+        margin-inline-start: 100px;
+
+    }
+
+    .navbar-brand {
+        width: 70%;
+    }
+
+
+    #formulario1 {
+        width: 70%;
+        border-radius: 2%;
+        display: block;
+
+
+    }
+
+    #formulario2 {
+        width: 70%;
+        border-radius: 2%;
+        display: block;
+
+    }
+
+    nav {
+        background-image: url('../img/fondo.jpg');
+        background-size:initial;
+    }
+
+
+footer {
+    background-image: url('../img/fondo.jpg');
+    background-size:cover;
+
+}
+
+}
+
+/*Pantalla mediana >768px*/
+@media (min-width:768px) and (max-width:991px) {
+    .navbar-brand {
+        width: 100%;
+    }
+
+    #uno {
+
+        width: 70%;
+        display: block;
+        margin-inline-start: 100px;
+        margin-inline-end: 2px;
+    }
+
+    #dos {
+        display: block;
+        width: 70%;
+        margin-inline-start: 100px;
+        margin-inline-end: 2px;
+
+
+    }
+
+    #tres {
+        display: block;
+        width: 70%;
+        margin-inline-start: 100px;
+        margin-inline-end: 2px;
+        padding-bottom: 200px;
+    }
+
+    #formulario1 {
+        display: block;
+    }
+
+    #formulario2 {
+        display: block;
+    }
+
+    nav {
+        background-image: url('../img/fondo.jpg');
+        background-size: contain;
+
+
+    }
+
+    footer {
+        background-image: url('../img/fondo.jpg');
+        background-size: auto;
+
+    }
+
+}
+
+/*Pantalla pequeña max 766*/
+@media (max-width:767px) {
+    .navbar-brand {
+        width: 100%;
+    }
+
+    #uno {
+
+        width: 70%;
+        display: block;
+        margin-inline-start: 70px;
+        margin-inline-end: 2px;
+    }
+
+    #dos {
+        display: block;
+        width: 70%;
+        margin-inline-start: 70px;
+        margin-inline-end: 2px;
+
+
+    }
+
+    #tres {
+        display: block;
+        width: 70%;
+        margin-inline-start: 70px;
+        margin-inline-end: 2px;
+        padding-bottom: 200px;
+    }
+
+    #formulario1 {
+        display: none;
+    }
+
+    #formulario2 {
+        display: none;
+    }
+
+    nav {
+        background-image: url('../img/fondo.jpg');
+        background-size: cover;
+
+
+    }
+
+    footer {
+        background-image: url('../img/fondo.jpg');
+        background-size: auto;
+
+    }
 
 }

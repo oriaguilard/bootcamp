@@ -75,15 +75,3 @@ $("#comuniquemonos").submit(function (event) {
 
     alert("Muchas gracias " + nombre + " hemos recibido su sugerencia y enviaremos una pronta repuesta al correo " + mail)  
 })
-
-
-//gaseosa tabla shop
-$(document).ready(function () {
-
-     //agrandar imagen
-     $("#gaseosa").dblclick(function(){  
-        $("#gaseosa").css({width:'300%'})
-    })
-
-
-});
